@@ -1,0 +1,245 @@
+cls 1 (Bindu Khadka)
+data analysis
+what is power bi 
+
+what is data analysis 
+
+it is a 5 step process
+
+oltps ---- ETL ---- olap ---- creating reports - --- sharing the reports to the clients
+
+cl2
+
+Power bi
+
+power query-----ETL
+power pivot-----SEMATIC MODAL
+power view------ VISUAL LEVEL SOFTWARE
+powerbi service ----- REPORT SHARING 
+
+intro to power query
+power query user interface
+data processing in power query
+
+power query
+Open Power BI software - Blank Report - Transform Data - transform Data - Power query editor 
+
+power query user interface
+
+1 Queries pane
+ tables = queries
+2 data pane
+we show the data
+3 ribbon
+GUI options
+4 query settings pane
+  Properties
+  Applied steps
+5 formula bar
+M Language code
+6 Advanced editor
+  we can see all the steps M - code
+7 query dependencies
+All Table source info
+
+Data Processing
+
+when we bring tables from any data source to power query it will bring tables and first 1000 row to power query
+initially power query will transform first 1000 rows
+
+when we click on close and apply button power query will bring all the data and transform it as per applied steps and load it into power pivot
+
+actual ETL process will happens when we click on close and apply
+
+cls3
+
+Filters
+
+why to use filters?
+to save the space in power pivot 
+to increase the performance of Report
+
+Filter in Power Query 
+
+Data Source 				Semantic Model 				Create 4 Reports ( Central Data )
+4 Regions 				Central 
+
+
+Filter in Power View 
+
+Data Source 				Semantic Model				Create 4 Reports (R1 - Central, R2 -East,R3- West,R4 - South )
+4 Regions				4 Regions 			
+
+
+When to use Filters in Power Query?
+
+When Data Source Contains Complete Data and if we want to Load Subset of Data into Power Pivot then we will use 
+When to use Filters in Power Query?
+
+There 2 Ways to Filter the Data in Power Query .
+
+1. Basic Filtering		( Equal to )
+2. Advanced Filtering 
+		A. Basic
+		B. Advanced 
+
+Cls 4
+
+Filtering the data on number data type
+filtering the data on date data type
+filtering the data on text data type
+
+AND & OR
+
+AND
+cond 1       cond2      result
+
+True         true      true
+
+True         FLASE      FALSE
+
+FLASE       TRUE        FALSE
+
+FLASE       FALSE       FALSE
+
+
+OR
+
+
+FLASE       TRUE        TRUE
+
+TRUE        TRUE        TRUE
+
+FLASE        FALSE      FALSE
+
+TRUE         FALSE      TRUE
+
+
+Filtering Data on Text Column
+
+Applying Multiple Filters Condition on Different Columns
+
+Text Filters in Power Query is Case Sensitive 
+
+
+Show the Employees where Deptno=10 along with Job="SALESMAN"
+
+Deptno=10	OR 		Job="SALESMAN"	
+
+Show the Employees where Deptno=30 AND Job="CLERK"
+
+
+Deptno=30		AND		Job="CLERK"
+
+
+--------------
+Filtering Data on Date Columns
+
+Show Todays and Last 3 Days Data
+
+cls 5
+Inbuilt Column Transformations
+
+	Remove Columns / Remove Other Columns
+	Choose Columns, Go To Column
+	Name / Rename a Column
+	Reorder Columns or Sort Columns - NoOfDays
+	Column from Examples
+Order Date(Year), Customer ID (Text Before -), CustomerName(First 5 Chars)
+
+(GUI Options , Column from Examples, Custom Column)	
+	Add Column / Custom Column   - Developer Need to Write M Language Code or refer open sources
+	
+	Duplicate Column
+        Split column
+
+When you want Output in Same Column use any of the Options in Transform Tab
+When you want Output in the New Column use the Options in Add Column Tab
+
+Save Space in Power Pivot 
+
+1. Remove Unwanted Columns 
+2. Remove Unwanted Rows ( Filters )
+
+Add Column / Custom Column 
+EX-1 
+year = Date.year(Order Date)
+
+EX-2
+
+first5char = Text.Start(customer name,5)
+
+EX-3
+
+FIRST2CHAR = Text.Start(customerID,2)
+
+Split column
+Ex - 1
+add mobile number column 91787456909 in EMP dataset using custom column and divide  country code and number by using split column.
+Ex - 2
+OrderID 
+first 6 char in one column nxt 5 char in one column and last 3 in one column
+
+cls 6
+
+Continuation to Column Transformations 
+
+	Split Column  - Mostly we need to Split the Columns Based on Delimiters or Based on Number of Characters
+	Merge Columns
+	***Unpivot Columns		- Pivot Data to Unpivot 
+	Pivot Column			- Unpivot to Pivot 
+
+	Transpose   - Convert Rows to Columns & Columns to Rows
+	Replace Values
+        Any arthematic Operation with Null is NUll
+        Emp dept dataset 
+        Ex - Total salary = (salary + comm)  
+	Remove Empty
+
+Unpivot   Format         - Easy to Create Visuals 
+pivot     Format 	 - Not Easy to Create Visual 
+
+Pivot Format   - Convert to Unpivot   - Create Visuals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
